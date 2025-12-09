@@ -69,16 +69,6 @@ namespace MedRegistryApp.wpf.Pages.Auth
                 authWindow.NavigateToForgotCredentials();
             }
         }
-
-        private void GuestLogin_Click(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-            // Вход как гость (userId = 0, role = "Гость")
-            var authWindow = Window.GetWindow(this) as AuthWindow;
-            if (authWindow != null)
-            {
-                authWindow.OpenMainWindow(0, "Гость");
-            }
-        }
     }
 }
 

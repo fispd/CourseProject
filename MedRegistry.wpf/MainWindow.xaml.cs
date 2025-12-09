@@ -21,19 +21,6 @@ namespace MedRegistryApp.wpf
             _userId = userId;
             _role = role;
 
-            if (_role == "Гость")
-            {
-                ProfileButton.Visibility = Visibility.Collapsed;
-                NewAppointment.Visibility = Visibility.Collapsed;
-                AppointmentsButton.Visibility = Visibility.Collapsed;
-                ReportsButton.Visibility = Visibility.Collapsed;
-                UserButton.Visibility = Visibility.Collapsed;
-
-                MainFrame.Content = new DoctorsPage(_userId, _role);
-                SetActiveButton(DoctorsButton);
-                return;
-            }
-
             if (_role != "Администратор")
             {
                 UserButton.Visibility = Visibility.Collapsed;

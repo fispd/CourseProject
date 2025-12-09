@@ -86,15 +86,6 @@
                                Cursor="Hand"
                                TextDecorations="Underline"
                                MouseLeftButtonDown="ForgotCredentials_Click"/>
-                    
-                    <TextBlock Text="  |  " Foreground="#E0E0E0" FontSize="13"/>
-                    
-                    <TextBlock Text="Войти как гость" 
-                               FontSize="13" 
-                               Foreground="#7F8C8D"
-                               Cursor="Hand"
-                               TextDecorations="Underline"
-                               MouseLeftButtonDown="GuestLogin_Click"/>
                 </StackPanel>
             </StackPanel>
         </Border>
